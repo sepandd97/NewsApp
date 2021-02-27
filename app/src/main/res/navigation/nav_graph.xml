@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentNews">
+
+    <fragment
+        android:id="@+id/fragmentNews"
+        android:name="com.roshastudio.newsapp.view.fragments.FragmentAllNews"
+        android:label="FragmentNews" >
+        <action
+            android:id="@+id/action_fragmentNews_to_fragmentNewsDesc"
+            app:destination="@id/fragmentNewsDesc" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBookMark"
+        android:name="com.roshastudio.newsapp.view.fragments.FragmentBookMark"
+        android:label="FragmentBoockMark" >
+        <action
+            android:id="@+id/action_fragmentBookMark_to_fragmentNewsDesc"
+            app:destination="@id/fragmentNewsDesc" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentNewsDesc"
+        android:name="com.roshastudio.newsapp.view.fragments.FragmentNewsDesc"
+        android:label="FragmentNewsDesc" />
+</navigation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/fragmentNews"
+            android:icon="@drawable/ic_baseline_format_align_justify_24"
+            android:title="@string/news_menu_title"
+            />
+        <item android:id="@+id/fragmentBookMark" android:icon="@drawable/ic_baseline_bookmarks_24" android:title="@string/bookmarks_menu_title"
+            />
+    </group>
+
+</menu>
